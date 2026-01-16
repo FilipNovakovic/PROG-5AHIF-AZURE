@@ -1,0 +1,23 @@
+<main style="font-family: system-ui; padding: 24px;">
+  <h1>Group 4 Frontend</h1>
+
+  <button (click)="load()" style="padding: 10px 14px; cursor: pointer;">
+    Hello
+  </button>
+
+  <button (click)="loadProducts()" style="padding: 10px 14px; cursor: pointer; margin-left: 10px;">
+    Load products
+  </button>
+
+  <p style="margin-top: 16px;">
+    <strong>Response:</strong> {{ message }}
+  </p>
+
+  <h2 style="margin-top: 24px;">Products</h2>
+
+  <ul>
+    <li *ngFor="let p of products">
+      {{ p.id }} - {{ p.name }} ({{ p.price }})
+    </li>
+  </ul>
+</main>

@@ -22,3 +22,32 @@ C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\co
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.pdb
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.genruntimeconfig.cache
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\ref\Api.dll
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\appsettings.Development.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\appsettings.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\Api.staticwebassets.endpoints.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\Api.exe
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\Api.deps.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\Api.runtimeconfig.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\Api.dll
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\Api.pdb
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.AssemblyInfoInputs.cache
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.AssemblyInfo.cs
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.csproj.CoreCompileInputs.cache
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.sourcelink.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\scopedcss\bundle\Api.styles.css
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets.build.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets.development.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets\msbuild.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets\msbuild.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets\msbuild.build.Api.props
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Api.props
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Api.props
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.dll
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\refint\Api.dll
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.pdb
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.genruntimeconfig.cache
+C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\ref\Api.dll
