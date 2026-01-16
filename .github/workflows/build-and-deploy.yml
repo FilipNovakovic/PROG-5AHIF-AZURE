@@ -1,0 +1,110 @@
+# Build and deploy to Azure
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  REGISTRY: ${{ secrets.AZURE_REGISTRY_URL }}
+  API_IMAGE_NAME: bookapi
+  FRONTEND_IMAGE_NAME: bookfrontend
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore src/BookAPI/BookAPI.csproj
+
+    - name: Build API
+      run: dotnet build src/BookAPI/BookAPI.csproj -c Release --no-restore
+
+    - name: Run unit tests
+      run: dotnet test src/BookAPI.Tests/BookAPI.Tests.csproj -c Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: '**/test-results.trx'
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install Angular dependencies
+      run: cd src/frontend && npm install
+
+    - name: Build Angular
+      run: cd src/frontend && npm run build-prod
+
+  deploy-to-azure:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Build API Docker image
+      run: |
+        docker build -f Dockerfile -t ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:${{ github.sha }} \
+          -t ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:latest .
+
+    - name: Build Frontend Docker image
+      run: |
+        docker build -f Dockerfile.frontend -t ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:${{ github.sha }} \
+          -t ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:latest .
+
+    - name: Push API image to ACR
+      run: |
+        az acr login --name $(echo ${{ env.REGISTRY }} | cut -d'.' -f1)
+        docker push ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:${{ github.sha }}
+        docker push ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:latest
+
+    - name: Push Frontend image to ACR
+      run: |
+        docker push ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:${{ github.sha }}
+        docker push ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:latest
+
+    - name: Deploy to Azure Container Apps
+      run: |
+        # Update API container image
+        az containerapp update \
+          --name book-api \
+          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+          --image ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:${{ github.sha }}
+        
+        # Update Frontend container image
+        az containerapp update \
+          --name book-frontend \
+          --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
+          --image ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:${{ github.sha }}
+
+    - name: Verify deployment
+      run: |
+        echo "Deployment completed successfully"
+        echo "API Container App: book-api"
+        echo "Frontend Container App: book-frontend"
