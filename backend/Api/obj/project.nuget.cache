@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "1mHo7SSqG/g=",
-  "success": false,
+  "dgSpecHash": "oXT56m4Nt9U=",
+  "success": true,
   "projectFilePath": "C:\\Users\\damja\\OneDrive\\Dokumente\\Schule HTL\\5.Klasse\\Programmieren\\PROG-5AHIF-AZURE\\backend\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damja\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
@@ -17,15 +17,15 @@
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.0\\microsoft.data.sqlite.core.8.0.0.nupkg.sha512",
-    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
-    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0\\microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",
-    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.0\\microsoft.entityframeworkcore.design.8.0.0.nupkg.sha512",
+    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.5\\microsoft.entityframeworkcore.8.0.5.nupkg.sha512",
+    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.5\\microsoft.entityframeworkcore.abstractions.8.0.5.nupkg.sha512",
+    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.5\\microsoft.entityframeworkcore.analyzers.8.0.5.nupkg.sha512",
+    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.5\\microsoft.entityframeworkcore.design.8.0.5.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.5\\microsoft.entityframeworkcore.relational.8.0.5.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\8.0.0\\microsoft.entityframeworkcore.sqlite.8.0.0.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\8.0.0\\microsoft.entityframeworkcore.sqlite.core.8.0.0.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.5\\microsoft.entityframeworkcore.sqlserver.8.0.5.nupkg.sha512",
-    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.0\\microsoft.entityframeworkcore.tools.8.0.0.nupkg.sha512",
+    "C:\\Users\\damja\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.5\\microsoft.entityframeworkcore.tools.8.0.5.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
@@ -88,17 +88,5 @@
     "C:\\Users\\damja\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\damja\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warnung als Fehler: Ein Downgrade des Pakets \"Microsoft.EntityFrameworkCore\" von 8.0.5 auf 8.0.0 wurde festgestellt. Verweisen Sie direkt aus dem Projekt auf das Paket, um eine andere Version auszuwählen. \r\n Api -> Microsoft.EntityFrameworkCore.SqlServer 8.0.5 -> Microsoft.EntityFrameworkCore.Relational 8.0.5 -> Microsoft.EntityFrameworkCore (>= 8.0.5) \r\n Api -> Microsoft.EntityFrameworkCore (>= 8.0.0)",
-      "projectPath": "C:\\Users\\damja\\OneDrive\\Dokumente\\Schule HTL\\5.Klasse\\Programmieren\\PROG-5AHIF-AZURE\\backend\\Api\\Api.csproj",
-      "filePath": "C:\\Users\\damja\\OneDrive\\Dokumente\\Schule HTL\\5.Klasse\\Programmieren\\PROG-5AHIF-AZURE\\backend\\Api\\Api.csproj",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
