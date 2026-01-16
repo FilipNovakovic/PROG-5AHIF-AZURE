@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1675c3cb-0519-4e4c-bf44-27b624245c51" name="damja@LAPTOP-IOV6M9HO 2026-01-16 13:08:14" runUser="LAPTOP-IOV6M9HO\damja" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-01-16T13:08:14.6946777+01:00" queuing="2026-01-16T13:08:14.6946781+01:00" start="2026-01-16T13:08:14.0361135+01:00" finish="2026-01-16T13:08:14.7016033+01:00" />
+  <TestSettings name="default" id="855cc24b-a328-46bd-ae09-85526ad3a1a8">
+    <Deployment runDeploymentRoot="damja_LAPTOP-IOV6M9HO_2026-01-16_13_08_14" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="dbc19888-5139-41c4-8cca-cca6335c442d" testId="c46e64d8-b2e3-5af1-abe0-7e3565cd84c1" testName="BookTests.Book_With_Negative_Price_Is_Invalid" computerName="LAPTOP-IOV6M9HO" duration="00:00:00.0644888" startTime="2026-01-16T13:08:14.5996113+01:00" endTime="2026-01-16T13:08:14.5996287+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbc19888-5139-41c4-8cca-cca6335c442d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="BookTests.Book_With_Negative_Price_Is_Invalid" storage="c:\users\damja\onedrive\dokumente\schule htl\5.klasse\programmieren\prog-5ahif-azure\backend\api.tests\bin\debug\net9.0\api.tests.dll" id="c46e64d8-b2e3-5af1-abe0-7e3565cd84c1">
+      <Execution id="dbc19888-5139-41c4-8cca-cca6335c442d" />
+      <TestMethod codeBase="C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api.Tests\bin\Debug\net9.0\Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BookTests" name="Book_With_Negative_Price_Is_Invalid" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="c46e64d8-b2e3-5af1-abe0-7e3565cd84c1" executionId="dbc19888-5139-41c4-8cca-cca6335c442d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Ergebnisse nicht in einer Liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Alle geladenen Ergebnisse" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.5)&#xD;
+[xUnit.net 00:00:00.06]   Discovering: Api.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  Api.Tests&#xD;
+[xUnit.net 00:00:00.09]   Starting:    Api.Tests&#xD;
+[xUnit.net 00:00:00.18]   Finished:    Api.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
