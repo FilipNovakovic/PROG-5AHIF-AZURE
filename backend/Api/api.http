@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:5055
+
+### GET alle Bücher abrufen
+GET {{baseUrl}}/books
+
+### POST neues Buch erstellen
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+  "title": "The C# Programming Language",
+  "price": 59.99
+}
+
+### POST weiteres Buch
+POST {{baseUrl}}/books
+Content-Type: application/json
+
+{
+  "title": ".NET Best Practices",
+  "price": 49.99
+}
