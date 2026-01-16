@@ -2564,23 +2564,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSIk\\.nuget\\packages\\": {},
+    "C:\\Users\\damja\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PROG5\\PROG-5AHIF-AZURE\\backend\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\damja\\OneDrive\\Dokumente\\Schule HTL\\5.Klasse\\Programmieren\\PROG-5AHIF-AZURE\\backend\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\PROG5\\PROG-5AHIF-AZURE\\backend\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\MSIk\\.nuget\\packages\\",
-      "outputPath": "C:\\PROG5\\PROG-5AHIF-AZURE\\backend\\Api\\obj\\",
+      "projectPath": "C:\\Users\\damja\\OneDrive\\Dokumente\\Schule HTL\\5.Klasse\\Programmieren\\PROG-5AHIF-AZURE\\backend\\Api\\Api.csproj",
+      "packagesPath": "C:\\Users\\damja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\damja\\OneDrive\\Dokumente\\Schule HTL\\5.Klasse\\Programmieren\\PROG-5AHIF-AZURE\\backend\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MSIk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\damja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2589,6 +2589,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2607,7 +2608,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -2645,16 +2646,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\PROG5\\PROG-5AHIF-AZURE\\backend\\Api\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
