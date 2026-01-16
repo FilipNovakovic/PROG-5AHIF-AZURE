@@ -1,4 +1,3 @@
-# Build and deploy to Azure
 name: Build and Deploy
 
 on:
@@ -11,13 +10,13 @@ on:
 
 env:
   REGISTRY: ${{ secrets.AZURE_REGISTRY_URL }}
-  API_IMAGE_NAME: bookapi
-  FRONTEND_IMAGE_NAME: bookfrontend
+  API_IMAGE_NAME: group1backend
+  FRONTEND_IMAGE_NAME: group1frontend
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -28,20 +27,19 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore src/BookAPI/BookAPI.csproj
+      run: dotnet restore Api/Api.csproj
 
     - name: Build API
-      run: dotnet build src/BookAPI/BookAPI.csproj -c Release --no-restore
+      run: dotnet build Api/Api.csproj -c Release --no-restore
 
-    - name: Run unit tests
-      run: dotnet test src/BookAPI.Tests/BookAPI.Tests.csproj -c Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+    - name: Run Tests
+      run: dotnet test Api/Api.csproj --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
 
-    - name: Upload test results
-      if: always()
+    - name: Upload Test Results
       uses: actions/upload-artifact@v4
       with:
         name: test-results
-        path: '**/test-results.trx'
+        path: Api/test-results.trx
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -49,10 +47,14 @@ jobs:
         node-version: '20'
 
     - name: Install Angular dependencies
-      run: cd src/frontend && npm install
+      run: |
+        cd Frontend
+        npm install
 
     - name: Build Angular
-      run: cd src/frontend && npm run build-prod
+      run: |
+        cd Frontend
+        npm run build --prod
 
   deploy-to-azure:
     needs: build-and-test
@@ -70,13 +72,13 @@ jobs:
 
     - name: Build API Docker image
       run: |
-        docker build -f Dockerfile -t ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:${{ github.sha }} \
-          -t ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:latest .
+        docker build -f Api/Dockerfile -t ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:${{ github.sha }} \
+          -t ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:latest Api
 
     - name: Build Frontend Docker image
       run: |
-        docker build -f Dockerfile.frontend -t ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:${{ github.sha }} \
-          -t ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:latest .
+        docker build -f Frontend/Dockerfile.frontend -t ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:${{ github.sha }} \
+          -t ${{ env.REGISTRY }}/${{ env.FRONTEND_IMAGE_NAME }}:latest Frontend
 
     - name: Push API image to ACR
       run: |
@@ -91,13 +93,11 @@ jobs:
 
     - name: Deploy to Azure Container Apps
       run: |
-        # Update API container image
         az containerapp update \
           --name book-api \
           --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
           --image ${{ env.REGISTRY }}/${{ env.API_IMAGE_NAME }}:${{ github.sha }}
         
-        # Update Frontend container image
         az containerapp update \
           --name book-frontend \
           --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
