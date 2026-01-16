@@ -22,6 +22,7 @@ C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\co
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.pdb
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.genruntimeconfig.cache
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\ref\Api.dll
+<<<<<<< HEAD
 C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\appsettings.Development.json
 C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\appsettings.json
 C:\PROG5\PROG-5AHIF-AZURE\backend\Api\bin\Debug\net9.0\Api.staticwebassets.endpoints.json
@@ -51,3 +52,14 @@ C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\refint\Api.dll
 C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.pdb
 C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.genruntimeconfig.cache
 C:\PROG5\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\ref\Api.dll
+=======
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.AssemblyInfoInputs.cache
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.AssemblyInfo.cs
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.sourcelink.json
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.dll
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\refint\Api.dll
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.pdb
+>>>>>>> 48ba7c00906851ff8b637ee5c7ee68e490775f77
