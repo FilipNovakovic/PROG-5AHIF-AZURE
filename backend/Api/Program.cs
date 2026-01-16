@@ -23,6 +23,6 @@ app.MapPost("/books", async (Book book, AppDbContext db) =>
 });
 
 app.MapGet("/books", async (AppDbContext db) =>
-    await db.Books.ToListAsync());
+    await db.Books.ToListAsync()); 
 
 app.Run();
