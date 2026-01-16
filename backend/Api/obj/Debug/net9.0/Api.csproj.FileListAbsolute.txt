@@ -22,3 +22,12 @@ C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\co
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.pdb
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.genruntimeconfig.cache
 C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG5AHIF\coursework\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\ref\Api.dll
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.AssemblyInfoInputs.cache
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.AssemblyInfo.cs
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.sourcelink.json
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.dll
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\refint\Api.dll
+C:\Users\damja\OneDrive\Dokumente\Schule HTL\5.Klasse\Programmieren\PROG-5AHIF-AZURE\backend\Api\obj\Debug\net9.0\Api.pdb
