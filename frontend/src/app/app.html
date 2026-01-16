@@ -1,23 +1,45 @@
-<main style="font-family: system-ui; padding: 24px;">
-  <h1>Group 4 Frontend</h1>
+<main style="font-family: system-ui; padding: 24px; max-width: 720px;">
+  <h1>Group 4 Books</h1>
 
-  <button (click)="load()" style="padding: 10px 14px; cursor: pointer;">
-    Hello
-  </button>
+  <div style="margin-top: 16px;">
+    <button (click)="loadBooks()" [disabled]="isLoading" style="padding: 10px 14px; cursor: pointer;">
+      Load books
+    </button>
+  </div>
 
-  <button (click)="loadProducts()" style="padding: 10px 14px; cursor: pointer; margin-left: 10px;">
-    Load products
-  </button>
+  <h2 style="margin-top: 24px;">Add book</h2>
 
-  <p style="margin-top: 16px;">
-    <strong>Response:</strong> {{ message }}
+  <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+    <input
+      [(ngModel)]="title"
+      placeholder="Title"
+      style="padding: 8px; flex: 1;"
+    />
+
+    <input
+      [(ngModel)]="price"
+      type="number"
+      step="0.01"
+      placeholder="Price"
+      style="padding: 8px; width: 140px;"
+    />
+
+    <button (click)="addBook()" [disabled]="isLoading" style="padding: 10px 14px; cursor: pointer;">
+      Add
+    </button>
+  </div>
+
+  <p *ngIf="message" style="margin-top: 12px;">
+    <b>Status:</b> {{ message }}
   </p>
 
-  <h2 style="margin-top: 24px;">Products</h2>
+  <h2 style="margin-top: 24px;">Books</h2>
 
-  <ul>
-    <li *ngFor="let p of products">
-      {{ p.id }} - {{ p.name }} ({{ p.price }})
+  <p *ngIf="isLoading">Loading...</p>
+
+  <ul *ngIf="!isLoading">
+    <li *ngFor="let b of books">
+      {{ b.id }} — {{ b.title }} ({{ b.price }})
     </li>
   </ul>
 </main>
